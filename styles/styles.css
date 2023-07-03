@@ -25,7 +25,6 @@ body {
 .header__navigation {
   width: 175px;
   height: 100%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +87,7 @@ body {
 }
 
 .navbar {
-  border: 1px solid green;
+  display: none;
   width: 400px;
 }
 .navbar__items {
@@ -105,6 +104,11 @@ body {
 }
 .navbar__link:hover {
   border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
 }
 
 .modal-navbar {
