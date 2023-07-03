@@ -44,7 +44,6 @@ body {
   }
 }
 .header__cart-avatar {
-  border: 1px solid blue;
   width: 70px;
   display: flex;
   align-items: center;
@@ -76,6 +75,16 @@ body {
 }
 .header__avatar {
   width: 24px;
+}
+@media (min-width: 1115px) {
+  .header__avatar {
+    width: 48px;
+  }
+}
+.header__avatar:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50px;
 }
 
 .navbar {

@@ -30,7 +30,7 @@
         }
     }
     &__cart-avatar {
-        border: 1px solid blue;
+        //   border: 1px solid blue;
         width: 70px;
         display: flex;
         align-items: center;
@@ -60,5 +60,13 @@
     }
     &__avatar {
         width: 24px;
+        @media (min-width: 1115px) {
+            width: 48px;
+        }
+        &:hover {
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            border-radius: 50px;
+        }
     }
 }
