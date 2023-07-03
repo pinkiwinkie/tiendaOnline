@@ -1,2 +1,13 @@
 @use 'initial';
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+.main-container {
+    width: 375px;
+    border: 1px solid black;
+    margin: auto;
+    @media (min-width: 1115px) {
+        width: 1115px;
+    }
+}
