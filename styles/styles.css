@@ -120,6 +120,9 @@ body {
   font-weight: 700;
   font: 1.1em;
 }
+.modal-navbar__close-icon:hover {
+  cursor: pointer;
+}
 
 .main-container {
   width: 375px;
