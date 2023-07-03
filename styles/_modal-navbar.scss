@@ -1,3 +1,8 @@
-.modal-navbar__background {
-    display: none;
+@use 'variables';
+@use 'mixins';
+.modal-navbar {
+    &__background {
+        @include mixins.modal-background;
+        //      display: none;
+    }
 }
