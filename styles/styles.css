@@ -189,6 +189,14 @@ body {
   }
 }
 
+.details {
+  border: 1px solid red;
+  padding: 24px;
+}
+.details__company {
+  color: hsl(26, 100%, 55%);
+}
+
 .main-container {
   width: 375px;
   border: 1px solid black;

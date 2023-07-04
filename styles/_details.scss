@@ -1,0 +1,10 @@
+@use 'variables' as v;
+@use 'mixins';
+.details {
+    border: 1px solid red;
+    padding: 24px;
+    &__company {
+        //color: variables.$Orange;
+        color: v.$Orange;
+    }
+}
