@@ -23,3 +23,13 @@
         cursor: pointer;
     }
 }
+
+@mixin changeNumber($topDown, $leftRight) {
+    width: 25px;
+    // border: 1px solid;
+    height: 100%;
+    padding: $topDown $leftRight;
+    &:hover {
+        cursor: pointer;
+    }
+}
