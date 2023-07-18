@@ -2,7 +2,6 @@
 @use 'mixins';
 .gallery {
     &__image-container {
-        border: 1px solid blue;
         height: 300px;
         width: 100%;
         background-image: url(../img/image-product-1.jpg);
