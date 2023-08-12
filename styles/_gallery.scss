@@ -14,10 +14,20 @@
     &__next {
         @include mixins.image-btn(170px, 320px);
     }
-    &__thumbnail {
+    &__thumbnails {
+        border: 1px solid blue;
         display: none;
         @media(min-width: 1115px) {
             display: block;
+        }
+    }
+    @media(min-width: 1115px) {
+        width: 446px;
+        &__image-container {
+            background-position-y: 0px;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
         }
     }
 }

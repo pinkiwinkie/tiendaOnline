@@ -179,16 +179,29 @@ body {
 .gallery__next:hover {
   cursor: pointer;
 }
-.gallery__thumbnail {
+.gallery__thumbnails {
+  border: 1px solid blue;
   display: none;
 }
 @media (min-width: 1115px) {
-  .gallery__thumbnail {
+  .gallery__thumbnails {
     display: block;
+  }
+}
+@media (min-width: 1115px) {
+  .gallery {
+    width: 446px;
+  }
+  .gallery__image-container {
+    background-position-y: 0px;
+    border-radius: 16px;
+    height: 446px;
+    margin-bottom: 32px;
   }
 }
 
 .details {
+  border: 1px solid red;
   padding: 24px;
 }
 .details__company {
@@ -250,6 +263,28 @@ body {
 .details__button:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+@media (min-width: 1115px) {
+  .details {
+    width: 446px;
+    padding-top: 60px;
+  }
+  .details__title {
+    font-size: 2.7em;
+    margin-bottom: 48px;
+  }
+  .details__description {
+    font-size: 0.9em;
+    margin-bottom: 37px;
+  }
+  .details__prices {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .details__product-quantity {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 .input {
@@ -349,5 +384,13 @@ body {
 @media (min-width: 1115px) {
   .main-container {
     width: 1115px;
+  }
+}
+
+@media (min-width: 1115px) {
+  .content {
+    display: flex;
+    padding: 90px 50px;
+    gap: 124px;
   }
 }/*# sourceMappingURL=styles.css.map */
