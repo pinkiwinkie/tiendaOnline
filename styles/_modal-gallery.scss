@@ -1,3 +1,27 @@
 @use 'variables' as v;
 @use 'mixins';
-.modal-gallery {}
+.modal-gallery {
+    width: 446px;
+    &__background {
+        @include mixins.modal-background;
+    }
+    &__image-container {
+        background-image: url('../img/image-product-1.jpg');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+    }
+    &__thumbnails {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__thumbnail {
+        width: 90px;
+        border-radius: 16px;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+}
