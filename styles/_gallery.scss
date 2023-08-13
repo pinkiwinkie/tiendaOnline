@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 .gallery {
     &__image-container {
@@ -15,10 +15,18 @@
         @include mixins.image-btn(170px, 320px);
     }
     &__thumbnails {
-        border: 1px solid blue;
         display: none;
         @media(min-width: 1115px) {
             display: block;
+        }
+    }
+    &__thumbnail {
+        width: 90px;
+        border-radius: 16px;
+        justify-content: space-between;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid v.$Orange;
         }
     }
     @media(min-width: 1115px) {

@@ -166,6 +166,11 @@ body {
 .gallery__previous:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__previous {
+    display: none;
+  }
+}
 .gallery__next {
   background-color: hsl(0, 0%, 100%);
   width: 40px;
@@ -179,14 +184,27 @@ body {
 .gallery__next:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__next {
+    display: none;
+  }
+}
 .gallery__thumbnails {
-  border: 1px solid blue;
   display: none;
 }
 @media (min-width: 1115px) {
   .gallery__thumbnails {
     display: block;
   }
+}
+.gallery__thumbnail {
+  width: 90px;
+  border-radius: 16px;
+  justify-content: space-between;
+}
+.gallery__thumbnail:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
 }
 @media (min-width: 1115px) {
   .gallery {
@@ -201,7 +219,6 @@ body {
 }
 
 .details {
-  border: 1px solid red;
   padding: 24px;
 }
 .details__company {
