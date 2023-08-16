@@ -1,9 +1,23 @@
 @use 'variables' as v;
 @use 'mixins';
 .modal-gallery {
-    width: 446px;
+    width: 550px;
     &__background {
         @include mixins.modal-background;
+        display: none;
+        //display: grid;
+        place-content: center;
+    }
+    &__close-container {
+        text-align: right;
+        height: 30px;
+    }
+    &__close {
+        width: 16px;
+        &:hover {
+            cursor: pointer;
+            content: url('../img/icon-close-orange.svg');
+        }
     }
     &__image-container {
         background-image: url('../img/image-product-1.jpg');
@@ -11,10 +25,13 @@
         background-size: cover;
         border-radius: 16px;
         margin-bottom: 32px;
+        position: relative;
     }
     &__thumbnails {
         display: flex;
         justify-content: space-between;
+        width: 500px;
+        margin: auto;
     }
     &__thumbnail {
         width: 90px;
@@ -23,5 +40,15 @@
             cursor: pointer;
             border: 2px solid v.$Orange;
         }
+    }
+    &__previous {
+        @include mixins.image-btn(190px,
+        -15px,
+        true);
+    }
+    &__next {
+        @include mixins.image-btn(190px,
+        525px,
+        true);
     }
 }
